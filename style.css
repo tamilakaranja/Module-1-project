@@ -248,3 +248,9 @@ box-shadow: var(--mustard);
     color: var(--forestgreen);
     margin-bottom: 20px;
 }
+.topics-card {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+
+}
