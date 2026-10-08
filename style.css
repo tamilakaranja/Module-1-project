@@ -40,3 +40,22 @@ a {
     text-decoration: none;
     color: inherit;
 }
+/* navigation bar  */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 7%;
+    background-color: var(--mustard);
+    color: var(--charcoal);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+.nav-bar img {
+    height: 150px;
+    width: auto ;
+
+}
+
