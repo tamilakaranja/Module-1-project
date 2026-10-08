@@ -197,4 +197,22 @@ box-shadow: var(--mustard);
     color: white;
     border-color: var(--mustard);
 }
+.stats {
+    background-color: var(--lightcream);
+    padding: var(--spacing-large);
+    overflow: hidden;
+}
+.stats .stats-ul {
+    display: flex;
+    max-width: max-content;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 auto;
+
+}
+
+.stats-item {
+    font-size: 20px;
+}
 
