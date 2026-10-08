@@ -3,7 +3,7 @@
  :root {
     --forestgreen: #0f5132;
     --redish:#d3543a;
-    --cream: #fdf4d1;
+    --cream: #fffbf2;
     --mustard: #ffce6b;
     --charcoal: #1a1a1a;
  --spacing-small: 10px;
@@ -14,4 +14,29 @@
  --transition: 0.3s ease;
  --font-heading: sans-serif;
  }
- 
+
+ /* base styles */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+ }
+ html {
+    scroll-behavior: smooth;
+ }
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.6;
+ }
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
