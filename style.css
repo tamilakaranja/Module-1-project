@@ -11,7 +11,7 @@
  --spacing-large: 40px;
  --spacing-xl: 80px;
  --spacing-xxl: 100px;
- --border-radius: 12px;
+ --border-radius: 30px;
  --transition: 0.3s ease;
  --font-heading: sans-serif;
  }
@@ -110,6 +110,8 @@ height: 100%;
 object-fit: cover;
 opacity: 0;
 animation: hero-slideshow 15s infinite;
+border: var(--border-radius);
+box-shadow: var(--mustard);
 }
 
 @keyframes hero-slideshow {
@@ -146,4 +148,12 @@ animation: hero-slideshow 15s infinite;
 
 .hero-img img:nth-child(3) {
     animation-delay: 10s;
+}
+
+.hero-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 206, 107, 0.18);
+    pointer-events: none;
 }
