@@ -197,6 +197,7 @@ box-shadow: var(--mustard);
     color: white;
     border-color: var(--mustard);
 }
+/* stats section  */
 .stats {
     background-color: var(--lightcream);
     padding: var(--spacing-large);
@@ -230,4 +231,11 @@ box-shadow: var(--mustard);
 }
 .stats-ul {
     animation: scroll-stats 7s linear infinite;
+}
+
+.featured-topics {
+    background-color: var(--mustard);
+    padding: var(--spacing-large);
+    max-width: max-content;
+    margin: 0;
 }
