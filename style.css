@@ -252,13 +252,17 @@ box-shadow: var(--mustard);
 }
 .topics-card {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 35px;
     align-items: center;
     max-width: max-content;
     margin: auto;
     justify-items: center;
-
+    flex-wrap: nowrap;
+    flex: 1;
+    min-width: 0;
+cursor: pointer;
+transition: transform 0.2s ease;
 }
 .topics-card article {
     border-radius: var(--border-radius);
@@ -270,3 +274,29 @@ box-shadow: var(--mustard);
     gap: 25px;
     margin: auto;
 }
+.topics-card article:hover {
+    animation: card-bounce 0.5s ease;
+}
+
+@keyframes card-bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
+
+    70% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
