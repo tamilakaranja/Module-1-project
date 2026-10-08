@@ -422,3 +422,34 @@ box-shadow: var(--mustard);
 .testimonials-card article:hover {
     transform: translateY(-8px);
 }
+/* ready for your next step  */
+
+.ready-step {
+     padding: 80px 6%;
+    text-align: center;
+}
+.ready-step h2 {
+    font-size: 40px;
+    color: var(--forestgreen);
+    margin-bottom: var(--spacing-large);
+}
+.ready-step p {
+    font-size: 20px;
+    color: var(--redish);
+    margin-bottom: var(--spacing-large);
+}
+.ready-step .button {
+    padding: 12px 25px;
+    background-color: var(--mustard);
+    color: var(--charcoal);
+    border: 2px solid var(--forestgreen);
+    font-size: 16px;
+    margin: 0;
+}
+
+.ready-step .button:hover {
+    background-color: var(--redish);
+    border-color: var(--redish);
+}
+
+
