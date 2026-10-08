@@ -94,3 +94,7 @@ color: var(--redish);
    
 }
 
+.hero-content h1 {
+    max-width: 750px;
+    color: var(--forestgreen);
+}
