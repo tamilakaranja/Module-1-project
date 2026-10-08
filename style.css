@@ -299,4 +299,10 @@ transition: transform 0.2s ease;
         transform: translateY(0);
     }
 }
-
+.how-it-works {
+  background-color: var(--mustard);
+    padding: var(--spacing-large);
+    max-width: max-content;
+    margin: 0;
+} 
+}
