@@ -252,18 +252,12 @@ box-shadow: var(--mustard);
 }
 .topics-card {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 35px;
-    align-items: center;
-    max-width: max-content;
+    width: 100%;
     margin: auto;
-    justify-items: center;
-    flex-wrap: nowrap;
-    flex: 1;
-    min-width: 0;
-cursor: pointer;
-transition: transform 0.2s ease;
 }
+
 .topics-card article {
     border-radius: var(--border-radius);
     background-color: var(--cream);
@@ -272,13 +266,14 @@ transition: transform 0.2s ease;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin: auto;
+    cursor: pointer;
 }
+
 .topics-card article:hover {
     animation: card-bounce 0.5s ease;
 }
 
-@keyframes card-bounce 
+@keyframes card-bounce {
     0% {
         transform: translateY(0);
     }
@@ -298,6 +293,7 @@ transition: transform 0.2s ease;
     100% {
         transform: translateY(0);
     }
+}
 /* how it works  */
 .how-it-works {
     background-color: var(--mustard);
@@ -347,4 +343,82 @@ transition: transform 0.2s ease;
     min-height: 380px;
     background-color: var(--lightcream);
     color: var(--charcoal);
+}
+
+
+/* testimonials  */
+.testimonials {
+    background-color: var(--mustard);
+    padding: 80px 6%;
+}
+
+.testimonials h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 45px;
+    color: var(--forestgreen);
+    margin-bottom: 40px;
+}
+
+/* Horizontal scrolling area */
+.testimonials-card {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 20px 5px 30px;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+.testimonials-card::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonials-card {
+    scrollbar-width: none;
+}
+
+
+.testimonials-card article {
+    flex: 0 0 330px;
+    min-height: 280px;
+
+    background-color: var(--cream);
+    border-radius: var(--border-radius);
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 6px 6px 0 var(--forestgreen);
+
+    transition: transform 0.3s ease;
+}
+
+
+.testimonials-card article::before {
+    content: "“";
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 80px;
+    line-height: 0.5;
+    color: var(--redish);
+}
+
+
+.testimonials-card blockquote p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--charcoal);
+}
+
+.testimonials-card article > p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--forestgreen);
+}
+
+.testimonials-card article:hover {
+    transform: translateY(-8px);
 }
