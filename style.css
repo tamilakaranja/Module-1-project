@@ -45,8 +45,15 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 7%;
-    background-color: var(--mustard);
+    padding: 8px 7%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+      border: 1px solid var(--mustard);
+    border-radius: 20px;
+
+    box-shadow: var(--mustard);
+
     color: var(--charcoal);
     position: sticky;
     top: 0;
@@ -58,7 +65,18 @@ a {
     width: auto ;
 
 }
-.nav-actions {
-    height: 10px;
+.nav-actions svg {
+    height: 30px;
     width: auto ;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600px;
+    transition: var(--transition);
 }
