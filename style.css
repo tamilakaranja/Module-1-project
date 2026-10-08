@@ -278,7 +278,7 @@ transition: transform 0.2s ease;
     animation: card-bounce 0.5s ease;
 }
 
-@keyframes card-bounce {
+@keyframes card-bounce 
     0% {
         transform: translateY(0);
     }
@@ -298,11 +298,32 @@ transition: transform 0.2s ease;
     100% {
         transform: translateY(0);
     }
-}
+/* how it works  */
 .how-it-works {
-  background-color: var(--mustard);
-    padding: var(--spacing-large);
-    max-width: max-content;
+    background-color: var(--mustard);
+    padding: 60px 6%;
+    width: 100%;
     margin: 0;
-} 
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    color: var(--forestgreen);
+    margin-bottom: 35px;
 }
+
+.how-it-works-cards .how-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    width: 100%;
+    list-style: none;
+    align-items: end;
+}
+
+.how-it-works-li {
+    padding: 25px;
+    border-radius: var(--border-radius);
+    background-color: var(--cream);
+    min-height: 180px;
+}
+
