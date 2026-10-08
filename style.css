@@ -209,10 +209,25 @@ box-shadow: var(--mustard);
     align-items: center;
     list-style-type: none;
     margin: 0 auto;
+   
 
 }
 
 .stats-item {
     font-size: 20px;
+     flex-shrink: 0;
+    white-space: nowrap;
+    margin-right: 100px;
 }
 
+@keyframes scroll-stats {
+      from {
+        transform: translateX(300);
+    }
+      to {
+        transform: translateX(-300%);
+    }
+}
+.stats-ul {
+    animation: scroll-stats 7s linear infinite;
+}
