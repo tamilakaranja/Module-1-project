@@ -1,0 +1,17 @@
+/* basic styling  */
+/* color palette  */
+ :root {
+    --forestgreen: #0f5132;
+    --redish:#d3543a;
+    --cream: #fdf4d1;
+    --mustard: #ffce6b;
+    --charcoal: #1a1a1a;
+ --spacing-small: 10px;
+ --spacing-medium: 20px;
+ --spacing-large: 40px;
+ --spacing-xl: 80px;
+ --border-radius: 12px;
+ --transition: 0.3s ease;
+ --font-heading: sans-serif;
+ }
+ 
