@@ -198,41 +198,45 @@ box-shadow: var(--mustard);
     border-color: var(--mustard);
 }
 /* stats section  */
+/* stats section */
 .stats {
     background-color: var(--lightcream);
-    padding: var(--spacing-large);
+    padding: var(--spacing-large) 0;
     overflow: hidden;
 }
+
+.stats-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-stats 10s linear infinite;
+}
+
+.stats-track:hover {
+    animation-play-state: paused;
+    color: var(--forestgreen);
+}
+
 .stats .stats-ul {
     display: flex;
-    max-width: max-content;
+    flex-shrink: 0;
+    min-width: 100vw;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    margin: 0 auto;
-   
-
 }
 
 .stats-item {
     font-size: 20px;
-     flex-shrink: 0;
+    font-weight: 600;
     white-space: nowrap;
-    margin-right: 100px;
+    padding: 0 40px;
 }
 
 @keyframes scroll-stats {
-      from {
-        transform: translateX(300);
-    }
-      to {
-        transform: translateX(-300%);
-    }
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
 }
-.stats-ul {
-    animation: scroll-stats 7s linear infinite;
-}
-
+/* featured section  */
 .featured-topics {
     background-color: var(--mustard);
     padding: var(--spacing-large);
@@ -510,7 +514,7 @@ html {
 }
 
 .nav-bar img {
-    height: 70px; 
+    height: 130px; 
 }
 
 /* topic cards and steps reflow by themselves instead of a fixed 4 columns */
@@ -543,7 +547,6 @@ html {
 .stats-item {
     margin-right: 0;
 }
-
 /* testimonial cards never wider than the screen */
 .testimonials-card {
     scroll-snap-type: x mandatory;
@@ -573,7 +576,9 @@ html {
         gap: 40px;
         padding: 60px 6%;
     }
-
+.nav-bar img {
+    height: 100px; /* was 70px */
+}
     .hero-content h1 {
         font-size: 44px;
     }
@@ -597,9 +602,9 @@ html {
         padding: 8px 5%;
     }
 
-    .nav-bar img {
-        height: 50px;
-    }
+   .nav-bar img {
+    height: 80px; /* was 50px */
+}
 
     .nav-links {
         flex-wrap: wrap;
