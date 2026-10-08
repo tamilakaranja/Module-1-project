@@ -457,13 +457,47 @@ footer {
     color: var(--charcoal);
     padding: 60px 6%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: var(--spacing-medium);
     align-items: flex-start;
    
 }
-}
+
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+.footer-brand,
+.footer-pages,
+.footer-social {
+    min-width: 180px;
+}
+
+.footer-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-pages a {
+    font-size: 15px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social svg {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+footer h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    color: var(--forestgreen);
+    margin-bottom: 12px;
 }
