@@ -76,7 +76,21 @@ a {
     
 }
 .nav-links a {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600px;
     transition: var(--transition);
 }
+.nav-links a:hover {
+color: var(--redish);
+}
+
+/* herosection */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-xl);
+    background: var(--mustard);
+   
+}
+
