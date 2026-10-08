@@ -247,10 +247,26 @@ box-shadow: var(--mustard);
     line-height: 1.05;
     color: var(--forestgreen);
     margin-bottom: 20px;
+     padding: 70px 6%;
+   
 }
 .topics-card {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 25px;
+    gap: 35px;
+    align-items: center;
+    max-width: max-content;
+    margin: auto;
+    justify-items: center;
 
+}
+.topics-card article {
+    border-radius: var(--border-radius);
+    background-color: var(--cream);
+    padding: var(--spacing-medium);
+    color: var(--charcoal);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: auto;
 }
