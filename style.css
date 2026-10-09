@@ -682,28 +682,90 @@ html {
 
 /* page 2 - navigate hero  */
 
-/* herosection */
-.hero-navigate{
+
+/* Hero section */
+.hero-navigate {
+    position: relative;
     min-height: 90vh;
     display: flex;
     align-items: center;
-    gap: var(--spacing-xxl);
     padding: var(--spacing-xl);
-    background: var(--cream);
-   
+    overflow: hidden;
+    background: var(--charcoal);
 }
-.hero-content-navigate h1 {
-    max-width: 500px;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 55px;
-    font-weight: 700;
-    line-height: 1.05;
-    color: var(--forestgreen);
-    margin-bottom: 20px;
 
+/* Image covers the entire hero section */
+.hero-img-nav {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
-.hero-content-navigate .hero-label-navigate{
-    margin-bottom: 50px;
-    font-size: 25px;
-    color: #d3543a;
+
+.hero-img-nav img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+    border: none;
+    box-shadow: none;
+}
+
+/* Dark overlay over the image */
+.hero-navigate::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Text appears on top of the image */
+.hero-content-navigate {
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+}
+
+.hero-content-navigate h1 {
+    max-width: 750px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(55px, 9vw, 115px);
+    font-weight: 700;
+    line-height: 0.95;
+    color: var(--cream);
+    margin-bottom: 20px;
+}
+
+.hero-content-navigate .hero-label-navigate {
+    display: table;
+    margin-bottom: 30px;
+    padding: 10px 14px;
+    font-size: 22px;
+    color: white;
+    background: var(--redish);
+}
+
+.hero-content-navigate .button {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .hero-navigate {
+        min-height: 75vh;
+        padding: 30px 20px;
+    }
+
+    .hero-content-navigate h1 {
+        font-size: 55px;
+    }
+
+    .hero-content-navigate .hero-label-navigate {
+        font-size: 17px;
+    }
 }
