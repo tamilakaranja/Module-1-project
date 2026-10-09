@@ -680,3 +680,30 @@ html {
     }
 }
 
+/* page 2 - navigate hero  */
+
+/* herosection */
+.hero-navigate{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xxl);
+    padding: var(--spacing-xl);
+    background: var(--cream);
+   
+}
+.hero-content-navigate h1 {
+    max-width: 500px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.05;
+    color: var(--forestgreen);
+    margin-bottom: 20px;
+
+}
+.hero-content-navigate .hero-label-navigate{
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: #d3543a;
+}
