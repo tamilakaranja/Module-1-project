@@ -718,7 +718,7 @@ html {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.35);
+     background: rgba(0, 0, 0, 0.479);
     z-index: 1;
     pointer-events: none;
 }
@@ -754,7 +754,7 @@ html {
     margin: 5px 10px 5px 0;
 }
 
-/* Mobile layout */
+/* Mobile layout responsive design*/
 @media (max-width: 600px) {
     .hero-navigate {
         min-height: 75vh;
