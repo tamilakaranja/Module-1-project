@@ -835,4 +835,73 @@ html {
     100% {
         transform: translateY(0);
     }
+} 
+
+.first-trip {
+    padding: 60px 5%;
+    
+}
+
+.first-trip-label {
+    color: var(--redish);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.first-trip h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 5vw, 48px);
+    color: var(--forestgreen);
+    margin-bottom: 12px;
+}
+
+.first-step-intro {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.trip-steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.trip-step {
+    background: var(--lightcream);
+    border-radius: 18px;
+    padding: 24px;
+    border-bottom: 4px solid var(--forestgreen);
+}
+
+.trip-step span {
+    display: inline-block;
+    color: var(--redish);
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.trip-step h3 {
+    color: var(--forestgreen);
+    margin-bottom: 10px;
+}
+
+.trip-step p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* responsive design new  */
+@media (max-width: 800px) {
+    .trip-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .trip-steps {
+        grid-template-columns: 1fr;
+    }
 }
