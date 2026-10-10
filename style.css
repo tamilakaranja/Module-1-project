@@ -1182,3 +1182,58 @@ html {
     margin: 0;
 }
 
+/* Documents Hero */
+.documents-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--spacing-large);
+    align-items: center;
+    padding: var(--spacing-xl) 8%;
+    background-color: var(--cream);
+}
+
+.documents-content h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    line-height: 1.15;
+    color: var(--forestgreen);
+    margin: var(--spacing-medium) 0;
+}
+
+.documents-label {
+    color: var(--redish);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.documents-intro {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--charcoal);
+}
+
+
+.documents {
+    background-color: var(--mustard);
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+}
+
+.documents h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1.2;
+    color: var(--forestgreen);
+    margin: var(--spacing-medium) 0;
+}
+
+.documents > p:last-child {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--charcoal);
+    margin-bottom: 0;
+}
+
