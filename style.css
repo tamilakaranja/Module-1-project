@@ -1305,4 +1305,33 @@ html {
     margin-bottom: 0;
 }
 
-```
+/* Tablet */
+@media (max-width: 750px) {
+    .documents-hero {
+        grid-template-columns: 1fr;
+        padding: 60px 6%;
+    }
+
+    .documents-topics {
+        padding: 60px 6%;
+    }
+
+    .documents {
+        padding: var(--spacing-medium);
+    }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+    .documents-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .documents-card {
+        padding: var(--spacing-medium);
+    }
+
+    .documents-content h1 {
+        font-size: 36px;
+    }
+}
