@@ -1476,3 +1476,55 @@ html {
     color: var(--charcoal);
     margin: 0;
 }
+/* table responsiveness  */
+@media (max-width: 850px) {
+    .money-hero {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-medium);
+        padding: 60px 5%;
+    }
+
+    .money-div {
+        padding: 25px;
+    }
+
+    .money-card {
+        padding: 25px;
+    }
+
+    .money-card h3 {
+        font-size: 22px;
+    }
+}
+/* mobile responsive design  */
+
+@media (max-width: 650px) {
+    .money-hero {
+        grid-template-columns: 1fr;
+        padding: 50px 6%;
+    }
+
+    .money-content h1 {
+        font-size: 40px;
+    }
+
+    .money-div {
+        padding: 25px;
+    }
+
+    .money-topics {
+        padding: 50px 6%;
+    }
+
+    .money-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .money-card {
+        padding: 25px;
+    }
+
+    .money-card h3 {
+        font-size: 23px;
+    }
+}
