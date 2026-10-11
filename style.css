@@ -1764,3 +1764,32 @@ html {
     border-color: var(--charcoal);
     transform: translateY(-3px);
 }
+/* wIntroduction */
+.work-introduction {
+    max-width: 850px;
+    margin: 90px auto;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.work-introduction h2,
+.work-heading,
+.work-checklist h2,
+.workplace-section h2,
+.work-cta h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
+    color: var(--forestgreen);
+}
+
+.work-introduction h2 {
+    margin: 15px 0 20px;
+}
+
+.work-introduction > p:last-child {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.8;
+}
