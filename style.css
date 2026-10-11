@@ -534,7 +534,7 @@ html {
     padding: 0;
 }
 
-/* stats: static row instead of the broken scrolling animation */
+/* Stats: scrolling animation*/
 .stats-ul {
     animation: none;
 }
