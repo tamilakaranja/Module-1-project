@@ -1562,3 +1562,32 @@ html {
     color: var(--charcoal);
     margin-bottom: 0;
       }
+
+      /* all topics section  */
+      
+      
+.all-topics {
+    padding: 80px 6%;
+    background-color: var(--lightcream);
+}
+
+.all-topics-heading {
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.all-topics-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--forestgreen);
+    margin: 15px 0;
+}
+
+.all-topics-heading > p:last-child {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--charcoal);
+    margin-bottom: 0;
+}
