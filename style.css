@@ -1531,4 +1531,34 @@ html {
     }
 }
 
+/* topics hero  */
+.topics-hero {
+    padding: 70px 8%;
+    background-color: var(--cream);
+}
 
+.topics-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--forestgreen);
+    margin: 20px 0;
+}
+
+.topics-label {
+    color: var(--redish);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.topics-hero > p:last-child {
+    max-width: 680px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--charcoal);
+    margin-bottom: 0;
+      }
