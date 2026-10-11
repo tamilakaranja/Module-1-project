@@ -1883,3 +1883,26 @@ html {
     padding-left: 5px;
     margin-bottom: 8px;
 }
+
+/* First-job section */
+.workplace-section {
+    padding: 65px 8%;
+    margin-bottom: 80px;
+    background: var(--forestgreen);
+    border-radius: var(--border-radius);
+}
+
+.workplace-section h2 {
+    color: var(--cream);
+    margin: 15px 0;
+}
+
+.workplace-section p {
+    max-width: 750px;
+    line-height: 1.8;
+    color: var(--cream);
+}
+
+.workplace-section .work-small-label {
+    color: var(--mustard);
+}
