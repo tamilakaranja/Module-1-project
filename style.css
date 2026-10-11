@@ -1708,9 +1708,9 @@ html {
 
 /* work Hero section */
 .work-hero {
+    display: block;
+    width: 100%;
     min-height: 65vh;
-    display: flex;
-    align-items: center;
     padding: 80px 8%;
     margin: 30px 0 0;
     background: var(--cream);
@@ -1718,8 +1718,10 @@ html {
 }
 
 .work-content {
+    width: 100%;
     max-width: 750px;
 }
+
 
 .work-label,
 .work-small-label {
@@ -1737,11 +1739,13 @@ html {
     margin: 20px 0;
 }
 
-.work-intro {
-    max-width: 600px;
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 35px;
+.work-introduction {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin: 90px auto;
+    padding: 0 25px;
+    text-align: center;
 }
 
 /* Buttons */
@@ -1793,8 +1797,10 @@ html {
     font-size: 17px;
     line-height: 1.8;
 }
-/* Work topic cards */
+/* work topic cards  */
 .work-topics {
+    display: block;
+    width: 100%;
     padding: 60px 5%;
     background: var(--mustard);
     border-radius: var(--border-radius);
@@ -1806,9 +1812,11 @@ html {
 
 .work-grid {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
 }
+
 
 .work-card {
     display: flex;
