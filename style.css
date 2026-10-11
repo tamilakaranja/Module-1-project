@@ -1639,5 +1639,28 @@ html {
     color: var(--charcoal);
     margin: 0 0 25px;
 }
+/* explore topics  */
 
+.topic-link {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 0;
+    color: var(--forestgreen);
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: var(--transition);
+}
 
+.topic-link::after {
+    content: " ";
+    transition: var(--transition);
+}
+
+.topic-link:hover {
+    color: var(--redish);
+}
+
+.topic-link:hover::after {
+    margin-left: 5px;
+}
