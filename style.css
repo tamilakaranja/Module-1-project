@@ -86,6 +86,8 @@ a {
 color: var(--redish);
 }
 
+
+
 /* herosection */
 .hero {
     min-height: 90vh;
@@ -1528,3 +1530,5 @@ html {
         font-size: 23px;
     }
 }
+
+
