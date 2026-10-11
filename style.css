@@ -1743,3 +1743,24 @@ html {
     line-height: 1.8;
     margin-bottom: 35px;
 }
+
+/* Buttons */
+.work-button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: var(--forestgreen);
+    color: var(--cream);
+    border: 2px solid var(--forestgreen);
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.work-button:hover {
+    background: var(--mustard);
+    color: var(--charcoal);
+    border-color: var(--charcoal);
+    transform: translateY(-3px);
+}
