@@ -1335,3 +1335,41 @@ html {
         font-size: 36px;
     }
 }
+
+/* money section  */
+.money-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--spacing-large);
+    align-items: center;
+    padding: var(--spacing-xl) 6%;
+    background-color: var(--cream);
+}
+
+.money-content h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 60px);
+    font-weight: 700;
+    line-height: 1.08;
+    color: var(--forestgreen);
+    margin: var(--spacing-medium) 0;
+    max-width: 650px;
+}
+
+.money-label {
+    color: var(--redish);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-medium);
+}
+
+.money-intro {
+    max-width: 560px;
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--charcoal);
+    margin-bottom: 0;
+}
+
