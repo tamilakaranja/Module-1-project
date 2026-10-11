@@ -1664,3 +1664,44 @@ html {
 .topic-link:hover::after {
     margin-left: 5px;
 }
+
+/* topics cta  */
+.topics-cta {
+    padding: 65px 6%;
+    background-color: var(--forestgreen);
+    color: var(--cream);
+    text-align: center;
+}
+
+.topics-cta h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
+    margin: 0 0 15px;
+}
+
+.topics-cta p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.topics-home-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: var(--mustard);
+    color: var(--charcoal);
+    border: 2px solid var(--mustard);
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.topics-home-button:hover {
+    background-color: var(--cream);
+    border-color: var(--cream);
+    transform: translateY(-3px);
+}
