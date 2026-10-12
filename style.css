@@ -15,6 +15,9 @@
  --border-radius: 30px;
  --transition: 0.3s ease;
  --font-heading: sans-serif;
+ --error: #b3261e;
+    --success: #1b6b3a;
+    --warning: #8a5a00;
  }
 
  /* base styles */
@@ -1977,5 +1980,200 @@ html {
 
     .work-cta {
         padding: 45px 20px;
+    }
+}
+/* Build my plan  */
+
+.plan {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-large);
+    padding: var(--spacing-xl) 6%;
+    background-color: var(--cream);
+}
+
+.plan-main h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.1;
+    color: var(--forestgreen);
+    margin-bottom: var(--spacing-medium);
+}
+
+.plan-intro {
+    max-width: 600px;
+    font-size: 17px;
+    margin-bottom: var(--spacing-small);
+}
+
+.required-disclaimer {
+    font-size: 14px;
+    margin-bottom: var(--spacing-large);
+}
+
+/* field cards*/
+.plan-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+}
+
+.plan-form fieldset {
+    min-width: 0;
+    padding: var(--spacing-large);
+    background-color: var(--lightcream);
+    border: 1px solid rgba(63, 7, 3, 0.3);
+    border-radius: var(--border-radius);
+}
+
+.plan-form legend {
+    padding: 0 var(--spacing-small);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--forestgreen);
+}
+
+/* raidoes and checkboxes */
+.plan-form .choice-group {
+    margin-top: var(--spacing-medium);
+    padding: var(--spacing-medium);
+    background-color: var(--cream);
+    border-radius: 18px;
+}
+
+.plan-form .choice-group legend {
+    font-size: 18px;
+}
+
+.form-field,
+.field-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--spacing-medium);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: var(--spacing-small);
+}
+
+.plan-form label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.plan-form input[type="text"],
+.plan-form input[type="email"],
+.plan-form input[type="tel"],
+.plan-form input[type="date"],
+.plan-form select,
+.plan-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--charcoal);
+    background-color: var(--cream);
+    border: 2px solid var(--forestgreen);
+    border-radius: 10px;
+}
+
+
+/* radios and checkboxes */
+.choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+}
+
+.choice input {
+    width: 22px;
+    height: 22px;
+    accent-color: var(--forestgreen);
+}
+
+/* error  */
+.plan-form input.is-invalid {
+    border-color: var(--error);
+    border-width: 3px;
+}
+
+.field-error {
+    color: var(--error);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* submit button */
+.plan-submit {
+    align-self: flex-start;
+    padding: 14px 32px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cream);
+    background-color: var(--forestgreen);
+    border: 2px solid var(--forestgreen);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.plan-submit:hover {
+    background-color: var(--mustard);
+    color: var(--charcoal);
+    border-color: var(--charcoal);
+}
+
+/* side panel */
+.plan-works {
+    align-self: start;
+    padding: var(--spacing-large);
+    background-color: var(--mustard);
+    border-radius: var(--border-radius);
+    border-bottom: 5px solid var(--forestgreen);
+}
+
+.plan-works h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    color: var(--forestgreen);
+    margin-bottom: var(--spacing-medium);
+}
+
+.plan-works ol {
+    padding-left: 22px;
+    line-height: 1.8;
+}
+
+/* reponsive design*/
+@media (min-width: 900px) {
+    .plan {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .plan-works {
+        position: sticky;
+        top: 180px;
+    }
+}
+
+/* phones */
+@media (max-width: 600px) {
+    .plan {
+        padding: 40px 5%;
+    }
+
+    .plan-form fieldset {
+        padding: var(--spacing-medium);
+    }
+
+    .plan-submit {
+        align-self: stretch;
     }
 }
