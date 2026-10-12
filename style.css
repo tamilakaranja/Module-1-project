@@ -911,6 +911,9 @@ html {
     background-color: var(--cream);
     color: var(--charcoal);
 }
+.route-explantion{
+    color: var(--charcoal);
+}
 
 /*  heading */
 
@@ -1019,7 +1022,7 @@ html {
     margin-top: 18px;
     font-size: 12px;
     line-height: 1.7;
-    color: var(--cream);
+    color: var(--charcoal);
 }
 
 /* MOVING OUT HERO */
