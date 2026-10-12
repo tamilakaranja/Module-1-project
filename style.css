@@ -2098,7 +2098,6 @@ html {
 
 /* error  */
 .plan-form input.is-invalid {
-    border-color: var(--error);
     border-width: 3px;
 }
 
