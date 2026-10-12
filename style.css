@@ -89,8 +89,6 @@ a {
 color: var(--redish);
 }
 
-
-
 /* herosection */
 .hero {
     min-height: 90vh;
@@ -1071,7 +1069,7 @@ html {
 .moving-paragraph2 {
     padding: 35px;
     background-color: var(--mustard);
-    border-radius: 10px 80px 10px 10px;
+    border-radius: var(--border-radius);
     border-bottom: 5px solid var(--forestgreen);
 }
 
@@ -1146,9 +1144,9 @@ html {
     align-items: flex-start;
     padding: 28px;
     background-color: var(--cream);
-    border: 1px solid rgba(15, 81, 50, 0.12);
+    border: 1px solid rgba(10, 77, 19, 0.12);
     border-bottom: 4px solid var(--forestgreen);
-    border-radius: 8px 24px 8px 24px;
+   border-radius: var(--border-radius);
     transition: transform var(--transition),
                 box-shadow var(--transition);
 }
