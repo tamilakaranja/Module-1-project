@@ -45,6 +45,8 @@ Encourages users to identify where they are in their journey and take practical 
 
 ### 7. Interactive User Interface
 Includes image slideshows, animated statistics, interactive cards, hover effects, and scrolling content to make the website more engaging.
+### 8. 	Work
+ Provide knowledge on getting jobs, internships, freelancing, CVs, portfolios, interviews and workplace basics.
 
 ## Technologies Used
 
