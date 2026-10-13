@@ -130,7 +130,7 @@ object-fit: cover;
 opacity: 0;
 animation: hero-slideshow 15s infinite;
 border: var(--border-radius);
-box-shadow: var(--mustard);
+
 }
 
 @keyframes hero-slideshow {
