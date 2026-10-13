@@ -1,5 +1,5 @@
 
-# Hatua — Adulting 101: The Complete Playbook
+# HatuaYako - Adulting 101: The Complete Playbook
 
 **Hatua yako inayofuata inaanzia hapa.**
 
