@@ -97,6 +97,10 @@ Module-1-project/
 ├── style.css
 └── README.md
 
+## Screenshots 
+The screenshots below demonstrate the visual design and main pages of Hatua Yako
+
+
 
 ## Future Improvements
 
