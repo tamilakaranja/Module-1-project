@@ -2503,3 +2503,86 @@ body {
         padding: 18px;
     }
 }
+/* confirmation page  */
+
+.confirmation-page{
+  min-height: 75vh;
+  padding: 65px 20px;
+  background-color: var(--forestgreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.confirmation-card{
+  width: 100%;
+  max-width: 650px;
+  background: var(--cream);
+  padding: 45px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(22, 50, 79, 0.1);
+  animation: confirmation-appear 0.7s ease;
+}
+.success-icon{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.confirmation-card h1{
+  color: var(--charcoal);
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 15px 0;
+}
+.confirmation-message{
+  color: var(--redish);
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.confirmation-note{
+  color: var(--charcoal);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+.confirmation-actions{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.confirmation-primary,
+.confirmation-secondary {
+    display: inline-block;
+    padding: 14px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+.confirmation-primary{
+  background: var(--mustard);
+  color: var(--charcoal);
+}
+.confirmation-primary:hover{
+  background: var(--mustard);
+  transform: translateY(-2px);
+}
+.confirmation-secondary{
+  border: 1px solid var(--charcoal);
+  color: var(--charcoal);
+}
+.confirmation-secondary:hover{
+  background: var(--mustard);
+  color: var(--charcoal)
+}
+@keyframes confirmation-appear{
+  from{
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
