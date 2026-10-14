@@ -2586,3 +2586,33 @@ body {
     transform: translateY(0);
   }
 }
+
+/* search bar  */
+.search-bar{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  margin-bottom: 10px;
+}
+.search-form input{
+  flex: 1;
+  min-width: 0;
+  padding: 15px 18px;
+  border: 1px solid #ddd6cc;
+  border-radius: 10px;
+  background: white;
+  font: inherit;
+}
+.search-form button{
+  padding: 14px 25px;
+  background: var(--forestgreen);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.search-form button:hover{
+  background: #e76f51;
+}
