@@ -100,7 +100,12 @@ Module-1-project/
 ## Screenshots 
 The screenshots below demonstrate the visual design and main pages of Hatua Yako
 
-
+### Home page
+![Homepage](screenshots/homepage.png)
+### Topics 
+![Topics](screenshots/topics.png)
+### Build my Plan
+![Build my plan](screenshots/build-page.png)
 
 ## Future Improvements
 
