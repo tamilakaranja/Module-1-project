@@ -2587,7 +2587,8 @@ body {
 }
 .submit-registration {
     width: max-content;
-    padding: 15px;
+    padding: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
     background-color: var(--mustard);
     border-radius: var(--border-radius);
