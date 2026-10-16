@@ -520,7 +520,6 @@ html {
     height: 130px; 
 }
 
-/* topic cards and steps reflow by themselves instead of a fixed 4 columns */
 .topics-card,
 .how-it-works-cards .how-list {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
