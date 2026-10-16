@@ -1,185 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hatua Yako</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
- <!-- Navigation bar   -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar   -->
     <header class="nav-bar">
-        <a href="index.html" class="logo">
-    <img src="images/Hatuayako.png" alt="Hatua Yako logo">
-</a>
-        
-        <nav class="nav-links" aria-label="Main">
-            <a href="index.html">Home</a>
-            <a href="index.html#how-it-works">How it works</a>
-            <a href="index.html#testimonials">Testimonials</a>
-            <a href="topics.html">Topics</a>
-            <a href="build-plan.html" class="button" aria-current="page">Build my plan</a>
-        </nav>
+      <a href="index.html" class="logo">
+        <img src="images/Hatuayako.png" alt="Hatua Yako logo" />
+      </a>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="topics.html">Topics</a>
+        <a href="build-plan.html" class="button" aria-current="page"
+          >Build my plan</a
+        >
+      </nav>
     </header>
 
     <main class="plan">
+      <section class="plan-main">
+        <h1>Build your plan</h1>
+        <p class="plan-intro">
+          Tell us where you are and what you need first. It takes about two
+          minutes, and we will line up the guides that fit your situation.
+        </p>
+        <p class="required-disclaimer">Fields marked * are required.</p>
 
-        <section class="plan-main">
-            <h1>Build your plan</h1>
-            <p class="plan-intro">
-                Tell us where you are and what you need first. It takes about
-                two minutes, and we will line up the guides that fit your situation.
-            </p>
-            <p class="required-disclaimer">Fields marked * are required.</p>
+        <!-- form input  -->
 
-            <!-- form input  -->
+        <form class="plan-form" action="confirmed.html" method="get">
+          <fieldset>
+            <legend>About you</legend>
 
-            <form class="plan-form" action="confirmed.html" method="get">
+            <div class="form-field">
+              <div class="field">
+                <label for="full-name">Full name *</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
 
-                <fieldset>
-                    <legend>About you</legend>
+              <div class="field">
+                <label for="email">Email address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
 
-                    <div class="form-field">
-                        <div class="field">
-                            <label for="full-name">Full name *</label>
-                            <input type="text" id="full-name" name="full-name" autocomplete="name" required>
-                        </div>
+              <div class="field">
+                <label for="phone">Phone number *</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  value=""
+                  class="is-invalid"
+                  aria-invalid="true"
+                  aria-describedby="phone-error"
+                  required
+                />
+                <p class="field-error" id="phone-error"></p>
+              </div>
+            </div>
+          </fieldset>
 
-                        <div class="field">
-                            <label for="email">Email address *</label>
-                            <input type="email" id="email" name="email" autocomplete="email" required>
-                        </div>
+          <!-- your situation  -->
+          <fieldset>
+            <legend>Your situation</legend>
 
-                        <div class="field">
-                            <label for="phone">Phone number *</label>
-                            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel"
-                                   value="" class="is-invalid" aria-invalid="true"
-                                   aria-describedby="phone-error" required>
-                            <p class="field-error" id="phone-error">
-                    
-                            </p>
-                        </div>
-                    </div>
-                </fieldset>
-<!-- your situation  -->
-                <fieldset>
-                    <legend>Your situation</legend>
+            <div class="field-grid">
+              <div class="field">
+                <label for="location">Where do you live now? *</label>
+                <select id="location" name="location" required>
+                  <option value="">Choose an area</option>
+                  <option>Nairobi CBD</option>
+                  <option>Westlands</option>
+                  <option>Kasarani</option>
+                  <option>Embakasi</option>
+                  <option>Ruiru</option>
+                  <option>Rongai</option>
+                  <option>Another town</option>
+                </select>
+              </div>
 
-                    <div class="field-grid">
-                        <div class="field">
-                            <label for="location">Where do you live now? *</label>
-                            <select id="location" name="location" required>
-                                <option value="">Choose an area</option>
-                                <option>Nairobi CBD</option>
-                                <option>Westlands</option>
-                                <option>Kasarani</option>
-                                <option>Embakasi</option>
-                                <option>Ruiru</option>
-                                <option>Rongai</option>
-                                <option>Another town</option>
-                            </select>
-                        </div>
+              <div class="field">
+                <label for="first-need"
+                  >What do you need help with first? *</label
+                >
+                <select id="first-need" name="first-need" required>
+                  <option value="">Choose a topic</option>
+                  <option>Moving out</option>
+                  <option>Documents and IDs</option>
+                  <option>Money</option>
+                  <option>Work and CVs</option>
+                  <option>Getting around town</option>
+                </select>
+              </div>
 
-                        <div class="field">
-                            <label for="first-need">What do you need help with first? *</label>
-                            <select id="first-need" name="first-need" required>
-                                <option value="">Choose a topic</option>
-                                <option>Moving out</option>
-                                <option>Documents and IDs</option>
-                                <option>Money</option>
-                                <option>Work and CVs</option>
-                                <option>Getting around town</option>
-                            </select>
-                        </div>
+              <div class="field">
+                <label for="target-date"
+                  >When do you want to get started? *</label
+                >
+                <input
+                  type="date"
+                  id="target-date"
+                  name="target-date"
+                  required
+                />
+              </div>
+            </div>
 
-                        <div class="field">
-                            <label for="target-date">When do you want to get started? *</label>
-                            <input type="date" id="target-date" name="target-date" required>
-                        </div>
-                    </div>
+            <fieldset class="choice-group">
+              <legend>Who will you live with?</legend>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="live-alone"
+                  name="living"
+                  value="alone"
+                />
+                <label for="live-alone">On my own</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="live-housemates"
+                  name="living"
+                  value="housemates"
+                />
+                <label for="live-housemates">With housemates</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="live-family"
+                  name="living"
+                  value="family"
+                />
+                <label for="live-family">With family</label>
+              </div>
+            </fieldset>
+          </fieldset>
 
-                    <fieldset class="choice-group">
-                        <legend>Who will you live with?</legend>
-                        <div class="choice">
-                            <input type="radio" id="live-alone" name="living" value="alone">
-                            <label for="live-alone">On my own</label>
-                        </div>
-                        <div class="choice">
-                            <input type="radio" id="live-housemates" name="living" value="housemates">
-                            <label for="live-housemates">With housemates</label>
-                        </div>
-                        <div class="choice">
-                            <input type="radio" id="live-family" name="living" value="family">
-                            <label for="live-family">With family</label>
-                        </div>
-                    </fieldset>
-                </fieldset>
+          <fieldset>
+            <legend>Extra details</legend>
 
-                <fieldset>
-                    <legend>Extra details</legend>
+            <fieldset class="choice-group">
+              <legend>Which topics interest you?</legend>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="topic-moving"
+                  name="topics"
+                  value="moving-out"
+                />
+                <label for="topic-moving">Moving out</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="topic-documents"
+                  name="topics"
+                  value="documents"
+                />
+                <label for="topic-documents">Documents and IDs</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="topic-money"
+                  name="topics"
+                  value="money"
+                />
+                <label for="topic-money">Money</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="topic-work"
+                  name="topics"
+                  value="work"
+                />
+                <label for="topic-work">Work and CVs</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="checkbox"
+                  id="topic-town"
+                  name="topics"
+                  value="getting-around"
+                />
+                <label for="topic-town">Getting around town</label>
+              </div>
+            </fieldset>
 
-                    <fieldset class="choice-group">
-                        <legend>Which topics interest you?</legend>
-                        <div class="choice">
-                            <input type="checkbox" id="topic-moving" name="topics" value="moving-out">
-                            <label for="topic-moving">Moving out</label>
-                        </div>
-                        <div class="choice">
-                            <input type="checkbox" id="topic-documents" name="topics" value="documents">
-                            <label for="topic-documents">Documents and IDs</label>
-                        </div>
-                        <div class="choice">
-                            <input type="checkbox" id="topic-money" name="topics" value="money">
-                            <label for="topic-money">Money</label>
-                        </div>
-                        <div class="choice">
-                            <input type="checkbox" id="topic-work" name="topics" value="work">
-                            <label for="topic-work">Work and CVs</label>
-                        </div>
-                        <div class="choice">
-                            <input type="checkbox" id="topic-town" name="topics" value="getting-around">
-                            <label for="topic-town">Getting around town</label>
-                        </div>
-                    </fieldset>
+            <div class="field">
+              <label for="notes">Anything else we should know?</label>
+              <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
 
-                    <div class="field">
-                        <label for="notes">Anything else we should know?</label>
-                        <textarea id="notes" name="notes" rows="4"></textarea>
-                    </div>
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="reminders"
+                name="reminders"
+                value="yes"
+              />
+              <label for="reminders">Email me reminders about my plan</label>
+            </div>
+          </fieldset>
+        </form>
 
-                    <div class="choice">
-                        <input type="checkbox" id="reminders" name="reminders" value="yes">
-                        <label for="reminders">Email me reminders about my plan</label>
-                    </div>
-                </fieldset>
+        <a href="confirmation.html" class="plan-submit">Create my plan</a>
+      </section>
 
-                <a href="confirmation.html" class="plan-submit">Create my plan</a>
-            
-        </section>
-
-        <aside class="plan-works">
-            <h2>How your plan works</h2>
-            <ol>
-                <li>Fill in the form with your situation.</li>
-                <li>We match you with the guides you need first.</li>
-                <li>Work through them at your own pace.</li>
-            </ol>
-        </aside>
-
+      <aside class="plan-works">
+        <h2>How your plan works</h2>
+        <ol>
+          <li>Fill in the form with your situation.</li>
+          <li>We match you with the guides you need first.</li>
+          <li>Work through them at your own pace.</li>
+        </ol>
+      </aside>
     </main>
 
     <footer>
-        <div class="footer-brand">
-            <h2>Hatua Yako</h2>
-            <p>Nairobi, Kenya</p>
-        </div>
-        <nav class="footer-pages" aria-label="Footer">
-            <a href="index.html">Home</a>
-            <a href="topics.html">Topics</a>
-            <a href="build-plan.html">Build my plan</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
+      <div class="footer-brand">
+        <h2>Hatua Yako</h2>
+        <p>Nairobi, Kenya</p>
+      </div>
+      <nav class="footer-pages" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="topics.html">Topics</a>
+        <a href="build-plan.html">Build my plan</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
     </footer>
-
-</body>
+  </body>
 </html>
