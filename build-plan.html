@@ -35,7 +35,7 @@
 
         <!-- form input  -->
 
-        <form class="plan-form" action="confirmed.html" method="get">
+        <form class="plan-form" action="confirmation.html" method="get">
           <fieldset>
             <legend>About you</legend>
 
@@ -68,14 +68,15 @@
                   type="tel"
                   id="phone"
                   name="phone"
+                  placeholder="e.g Enter a valid phone number, e.g. 0712 345 678"
                   autocomplete="tel"
                   inputmode="tel"
                   value=""
                   class="is-invalid"
                   aria-invalid="true"
                   aria-describedby="phone-error"
-                  required
-                />
+                  required />
+        
                 <p class="field-error" id="phone-error"></p>
               </div>
             </div>
@@ -228,7 +229,9 @@
           </fieldset>
         </form>
 
-        <a href="confirmation.html" class="plan-submit">Create my plan</a>
+  <button type="submit" class="submit-registration">
+
+  Create my plan</button>
       </section>
 
       <aside class="plan-works">

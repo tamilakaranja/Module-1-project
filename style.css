@@ -2585,6 +2585,17 @@ body {
     transform: translateY(0);
   }
 }
+.submit-registration {
+    width: max-content;
+    padding: 15px;
+    border: none;
+    background-color: var(--mustard);
+    border-radius: var(--border-radius);
+    color: var(--charcoal);
+    font-weight: 700;
+    margin-top: var(--spacing-medium);
+
+}
 
 /* search bar  */
 .search-bar{
